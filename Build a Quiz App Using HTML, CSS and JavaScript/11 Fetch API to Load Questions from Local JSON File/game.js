@@ -36,7 +36,10 @@ fetch("questions.json").then( (res) => {
     console.log( loadedQuestions);
     questions = loadedQuestions;
     startGame();
+}).catch(err => {
+    console.error(err);
 });
+
 
     /*{
         Question: "Who invented JavaScript?",
