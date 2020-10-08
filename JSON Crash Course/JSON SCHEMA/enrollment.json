@@ -1,0 +1,9 @@
+{
+    "Action" : "save_to_database",
+    "First_Name" : "Godfred",
+    "Last_Name" : "Nsabo",
+    "Email" : "godfred.nsabo@amalitech.org",
+    "Track" : "Development and Operations",
+    "Internet_bundle" : 200,
+    "Paid" : false
+}

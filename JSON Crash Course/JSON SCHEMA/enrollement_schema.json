@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Action": "save_to_database",
+            "First_Name": "Godfred",
+            "Last_Name": "Nsabo",
+            "Email": "godfred.nsabo@amalitech.org",
+            "Track": "Development and Operations",
+            "Internet_bundle": 200,
+            "Paid": false
+        }
+    ],
+    "required": [
+        "Action",
+        "First_Name",
+        "Last_Name",
+        "Email",
+        "Track",
+        "Internet_bundle",
+        "Paid"
+    ],
+    "properties": {
+        "Action": {
+            "$id": "#/properties/Action",
+            "type": "string",
+            "title": "The Action schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "save_to_database"
+            ]
+        },
+        "First_Name": {
+            "$id": "#/properties/First_Name",
+            "type": "string",
+            "title": "The First_Name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Godfred"
+            ]
+        },
+        "Last_Name": {
+            "$id": "#/properties/Last_Name",
+            "type": "string",
+            "title": "The Last_Name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Nsabo"
+            ]
+        },
+        "Email": {
+            "$id": "#/properties/Email",
+            "type": "string",
+            "title": "The Email schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "godfred.nsabo@amalitech.org"
+            ]
+        },
+        "Track": {
+            "$id": "#/properties/Track",
+            "type": "string",
+            "title": "The Track schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Development and Operations"
+            ]
+        },
+        "Internet_bundle": {
+            "$id": "#/properties/Internet_bundle",
+            "type": "integer",
+            "title": "The Internet_bundle schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                200
+            ]
+        },
+        "Paid": {
+            "$id": "#/properties/Paid",
+            "type": "boolean",
+            "title": "The Paid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        }
+    },
+    "additionalProperties": true
+}
