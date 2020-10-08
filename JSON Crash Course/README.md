@@ -24,11 +24,19 @@
 An object is defined by its properties and their values
 
 # JSON Object Structure
-{
-    "First_name" : "Godfred"
-    "Last_name"  : "Nsabo" 
-}
+- {
+   - "First_name" : "Godfred"
+   - "Last_name"  : "Nsabo" 
+- }
 
  - JSON objects are identified by curly brackets {}
  - JSON objects have properties like Name of Person, Model and Engine of Cars,
- 
+ - Properties have values; and they are both put in double quotes and separated by comma.
+
+ ## Data Type in JSON
+  - String - eg. { "First_name" : "Godfred"}
+  - Number - eg. { "age" : "29"}
+  - Boolean - eg. { "Graduate" : true}
+  - null/empty - eg. { "Pay" : null}
+  - Object - eg. { "First_name" : "Godfred", "Last_name" : "Nsabo"}}
+  - Array -  eg. {"IDs" : [0,0,4,8,9,2]}
