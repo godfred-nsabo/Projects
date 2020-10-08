@@ -11,6 +11,22 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+/*if (!("scramble" in Array.prototype)) {
+    Object.defineProperty(Array.prototype, "scramble", {
+        enumerable: false,
+        value: function () {
+            var o, i, ln = this.length;
+            while (ln--) {
+                i = Math.random() * (ln + 1) | 0;
+                o = this[ln];
+                this[ln] = this[i];
+                this[i] = o;
+            }
+            return this;
+        }
+    });
+};*/
+//function shuffle () {
 let questions = [
     {
         Question: "Who invented JavaScript?",
@@ -46,8 +62,7 @@ let questions = [
         answer: 1,
     },
     {
-        Question:
-            "What is the correct syntax for referring to an external script called 'xxx.js'?",
+        Question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
         choice1: "<script href='xxx.js'>",
         choice2: "<script name='xxx.js'>",
         choice3: "<script src='xxx.js'>",
@@ -62,12 +77,57 @@ let questions = [
         choice4: "alert('Hello World');",
         answer: 4,
     },
+
+    {
+        Question: "What is the full form of IP?",
+        choice1: "Internet Provider", 
+        choice2: "Internet Port", 
+        choice3: "Internet Protocol", 
+        choice4: "Other",
+        answer: 4
+    }, 
+    {
+        Question: "Who is the founder of Microsoft?",
+        choice1: "Bill Gates", 
+        choice2: "Steve Jobs", 
+        choice3: "Steve Wozniak", 
+        choice4: "Martin Shaba",
+        answer: 1
+    }, 
+    {
+        Question: "What was your first dream?",
+        choice1: "8 bits", 
+        choice2:"64 bits", 
+        choice3:"1024 bits",
+        choice4: "16 bits",
+        answer: 1
+    },  
+    {
+        Question: "What does CC mean in emails?",
+        choice1: "Carbon Copy", 
+        choice2: "Creative Commons", 
+        choice3: "Copy Carbon",
+        choice4: "Create Copy",
+        answer: 1
+    }   
 ];
+/*questions.forEach(q => q.choices.scramble());
+//console.log(questions.choices);
+for (var setIndex = 0; setIndex < questionSets.length; ++setIndex) {
+    var questionSet = questionSets[setIndex];
+    var questionIndex = Math.floor(Math.random() * questionSet.length);
+    var question = questionSet[questionIndex];
+    var selector = '#questions li:nth-child(' + (setIndex + 1).toString() + ')';
+    //var setId = 'set_' + (setIndex + 1).toString();
+    document.querySelector(selector).innerHTML = question;
+    //document.getElementById(setId).innerHTML = question;
+}
+};*/
 
 //CONSTANTS
 
 const CORRECT_BONUS = 10; // WHen you get a question correct who much do u score
-const MAX_QUESTIONS = 6; //How many questions does user get before he/she finishes
+const MAX_QUESTIONS = 10; //How many questions does user get before he/she finishes
 
 startGame = () => {
     questionCounter = 0;
