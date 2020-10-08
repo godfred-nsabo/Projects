@@ -5,5 +5,5 @@
     "Marital_Status": "Single",
     "Children": 0,
     "Married": false,
-    "Pet_name" null
+    "Pet_name" : null
 }
