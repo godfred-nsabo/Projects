@@ -38,5 +38,5 @@ An object is defined by its properties and their values
   - Number - eg. { "age" : "29"}
   - Boolean - eg. { "Graduate" : true}
   - null/empty - eg. { "Pay" : null}
-  - Object - eg. { "First_name" : "Godfred", "Last_name" : "Nsabo"}}
-  - Array -  eg. {"IDs" : [0,0,4,8,9,2]}
+  - Object - eg. { "First_name" : "Godfred", "Father" : {"Last_name" : "Nsabo"}}
+  - Array -  eg. {"IDs" : [0,0,4,8,9,2] }
