@@ -1,0 +1,58 @@
+﻿[
+  {
+    "First_Name": "Godfred",
+    "Last_Name": "Nsabo",
+    "Date_of_Birth": "May, 29 1992",
+    "Marital_Status": "Single",
+    "Children": 0,
+    "Fathers": 2,
+    "Name_Fathers": {
+      "First": "Godfred Nsebo",
+      "age_first": 60,
+      "Second": "Joseph Osei-Brefoh",
+      "age_second": 59
+    },
+    "Married": false,
+    "Siblings": [
+      "Faustina",
+      "Sampson",
+      "Perpetual",
+      "Anthony"
+    ],
+    "Pet_name": null
+  },
+  {
+    "First_Name": "Godfred",
+    "Last_Name": "Nsabo",
+    "Date_of_Birth": "May, 29 1992",
+    "Marital_Status": "Single",
+    "Children": 0,
+    "Fathers": 2,
+    "Name_Fathers": {
+      "First": "Godfred Nsebo",
+      "age_first": 60,
+      "Second": "Joseph Osei-Brefoh",
+      "age_second": 59
+    },
+    "Married": false,
+    "Siblings": [
+      {
+        "name": "Faustina",
+        "age": 26
+      },
+      {
+        "name": "Sampson",
+        "age": 24
+      },
+      {
+        "name": "Perpetual",
+        "age": 29
+      },
+      {
+        "name": "Anthony",
+        "age": 33
+      }
+    ],
+    "Pet_name": null
+  }
+]
