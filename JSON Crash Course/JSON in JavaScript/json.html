@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON FOR JAVASCRIPT</title>
+        <script>
+            var car_obj = {make: "Mercedes-Benz", model: "C-Class V6", year: 2020,
+            Fuel_Tank_Capacity: "66L", Drivetrain: "AWD", Engine_Power: "385 hp"};
+            function ShowMessage() {
+               /* var json_string = document.getElementById("txt_JSON").value;
+                var json_obj = JSON.parse(json_string);
+                alert(json_obj.make);
+                alert(json_obj.model);
+                alert(json_obj.Fuel_Tank_Capacity);
+                alert(json_obj.Drivetrain);
+                alert(json_obj.Engine_Power);
+                alert(json_obj.Name_Fathers.age_first);
+                alert(json_obj.Date_of_Birth);
+                //alert(json_string);*/
+                //alert(car_obj.make);
+                document.getElementById("txt_JSON").value = JSON.stringify(car_obj);
+
+            }
+        </script> 
+            </head> 
+        <body>
+            <textarea style="width: 1000; height: 1000;" id="txt_JSON" ></textarea>
+            <br/><input type="button" value="Test Function" onclick="ShowMessage()"/>
+        </body>    
+</html>
+
+<!--{"make" : "Mercedes-Benz" , "model" : "C-Class V6",  "Fuel_Tank_Capacity" :
+     "66L",  "Drivetrain" : "AWD", "Engine_Power" : "385 hp" }-->
