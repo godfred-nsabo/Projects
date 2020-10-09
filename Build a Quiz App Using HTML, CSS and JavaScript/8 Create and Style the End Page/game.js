@@ -103,8 +103,8 @@ const MAX_QUESTIONS = 10; // How many questions does user get before he/she fini
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [... questions];
-    console.log(availableQuestions);
+    availableQuestions = [...questions];
+    //console.log(availableQuestions);
     getNewQuestions();
 };
 
@@ -113,7 +113,7 @@ getNewQuestions = () => {
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //go to the end page
-        return window.location.assign("/end.html");
+        return window.location.assign("end.html");
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
@@ -159,9 +159,7 @@ choices.forEach(choice => {
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
-
         setTimeout(() => {
-
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestions();
         }, 1000);
@@ -176,6 +174,6 @@ incrementScore = num => {
 
 startGame();
 
-function newFunction() {
-    return document.getElementById("progressBarFull");
-}
+//function newFunction() {
+  //  return document.getElementById("progressBarFull");
+//}
