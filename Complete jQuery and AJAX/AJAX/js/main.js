@@ -126,6 +126,25 @@ $('a').on('click', function(event){
 
 /*============== Setting up Store Items =================*/
 
+function addItem(name, description, price, moreInfo) {
+
+  let html = '';
+html +='<div class="item">';
+html +='<div class="name">' + name + '</div>';
+html +='<img src="assests/coverpage.jpg"></img>';
+html +='<div class="description">'+ description +'</div>';
+html +='<div class="price">'+ price + '</div>';
+html +='<button class="item-add" >Add to Cart</button>';
+html +='<button class="item-remove">Remove</button>';
+html +='<br>';
+html +='<a class="more-info-link" href="#">More info</a>';
+html +='<div class="more-info">' + moreInfo + '</div>';
+html +='</div>';
+
+//$('#container').append(html); // APPEND ADD ITEMS TO THE BUTTON LIST
+$('#container').prepend(html); // PREPEND ADDS ITEMS TO THE FIRST LINE
+
+}
 
 $(document).ready(function(){
 
@@ -133,27 +152,10 @@ $(document).ready(function(){
   let name = $('#input-create-item').val();
   console.log(name);});*/
 
-  $('#button-create-item').click(function() {
+  /*$('#button-create-item').click(function() {
     //console.log($('#input-create-item').val());
     let name = $('#input-create-item').val();
-    $('#input-create-item').val(''); async=false;
-
-  let html = '';
-html +='<div class="item">';
-html +='<div class="name">' + name + '</div>';
-html +='<img src="assests/coverpage.jpg"></img>';
-html +='<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</div>';
-html +=  '<div class="price">$ 499.98</div>';
-html +='<button class="item-add" >Add to Cart</button>';
-html +='<button class="item-remove">Remove</button>';
-html +='<br>';
-html +='<a class="more-info-link" href="#">More info</a>';
-html +='<div class="more-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>';
-html +='</div>';
-
-//$('#container').append(html); // APPEND ADD ITEMS TO THE BUTTON LIST
-$('#container').prepend(html); // PREPEND ADDS ITEMS TO THE FIRST LINE
-});
+    $('#input-create-item').val(''); async=false; });*/
 
 //$('#container .item-remove').on('click', function(){
   //console.log('Hello');
@@ -196,10 +198,28 @@ $('#container').on('click','.item-remove', function(){
 
 // ============ AJAX =======================
 
-$.ajax('data/item/json', function(response) {
-  console.log(response);
+//$.ajax('data/item/json', function(response) {
+  //console.log(response);
 
-});
+  // ============ Loading JSON =======================
+  //Using .done(), .fail() and .always() functions
+
+  $.ajax('data/item.json').done(function(response) { // for successful functions
+    //console.log('response');
+    //console.log(response);
+    let items = response.items;
+    //console.log(items);
+    items.forEach(function(item){
+      //console.log(item);
+  addItem(item.name, item.description,
+    item.price, item.moreInfo);
+    });
+
+  }).fail(function (request, errorType, errorMessage){ // for failed functions
+    console.log(errorMessage);
+  }).always(function(){ // alawys is called whether success or failed
+
+    })
 
 
 

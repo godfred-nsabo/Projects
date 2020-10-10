@@ -1,0 +1,29 @@
+{
+  "items":[
+    {
+      "name" : "QUIZ APP",
+      "description": "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 499.98,
+      "moreInfo" : "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod"
+    },
+    {
+      "name" : "BOOK APP",
+      "description": "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 599.98,
+      "moreInfo" : "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod"
+    },
+    {
+      "name" : "JAVA APP",
+      "description": "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 399.98,
+      "moreInfo" : "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod"
+    },
+    {
+      "name" : "ASEDA APP",
+      "description": "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "price": 799.98,
+      "moreInfo" : "Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod"
+    }
+  ]
+
+}
