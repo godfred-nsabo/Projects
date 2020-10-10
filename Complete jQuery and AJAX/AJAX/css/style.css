@@ -46,6 +46,15 @@ body {
   margin: 12px;
 }
 
+#cart-container {
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+  padding: 12px;
+  margin-left: 0;
+}
+
+
 .item {
   width: 200px;
   background-color: #DDD;

@@ -125,11 +125,11 @@ $('a').on('click', function(event){
 });*/
 
 /*============== Setting up Store Items =================*/
-
-function addItem(name, description, price, moreInfo) {
+var cart = 0;
+function addItem(id, name, description, price, moreInfo) {
 
   let html = '';
-html +='<div class="item">';
+html +='<div class="item" data-id="' + id + '">';
 html +='<div class="name">' + name + '</div>';
 html +='<img src="assests/coverpage.jpg"></img>';
 html +='<div class="description">'+ description +'</div>';
@@ -215,7 +215,7 @@ $('#container').on('click','.item-remove', function(){
     //console.log(items);
     items.forEach(function(item){
       //console.log(item);
-  addItem(item.name, item.description,
+  addItem(item.id, item.name, item.description,
     item.price, item.moreInfo);
     });
 
@@ -223,9 +223,38 @@ $('#container').on('click','.item-remove', function(){
     console.log(errorMessage);
   }).always(function(){ // alawys is called whether success or failed
 
+  });
+
+  /*$('#container').click('.item-add', function(){
+    let id = $(this).parent().data('id');
+    console.log(id);
+    $.ajax('data/addtocart.json', {
+      type: 'post',
+      data: {id: id},
+      dataType: 'json',
+      contentType:'application/json'
     })
+  });*/
 
+$('#container').on('click','.item-add', function(){
+  let id = $(this).parent().data('id');
+  //console.log(id);
+  $.ajax('data/addToCart.json', {
+    type: 'post',
+    data: { id: id },
+    dataType: 'json',
+    contentType: 'application/json'
+  }).done(function(response){
+    //console.log(response);
+    if (response.message === 'success'){
+      let price = response.price;
+      //console.log(price);
+      cart += price;
 
+      $('#cart-container').text('$' + cart);
+    }
+  });
+})
 
 
 
@@ -236,6 +265,19 @@ $('#container').on('click','.item-remove', function(){
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //< BUG: Needs to be fixed----> =====NOW FIXED
