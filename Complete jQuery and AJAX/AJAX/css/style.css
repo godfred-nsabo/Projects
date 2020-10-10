@@ -53,15 +53,15 @@ body {
   padding: 12px;
   margin-left: 0;
 }
-
-
+#newsletter-frequency {
+  display: none;
+}
 .item {
   width: 200px;
   background-color: #DDD;
   padding: 4px;
   float: left;
   margin: 6px;
-
 }
 
 .item img {

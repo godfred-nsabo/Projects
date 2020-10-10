@@ -254,15 +254,20 @@ $('#container').on('click','.item-add', function(){
       $('#cart-container').text('$' + cart);
     }
   });
-})
+});
 
+$('#newsletter-checkbox').on('change', function(){
+  if ($(this).is(':checked')){
+    //console.log('Yes');
+    $('#newsletter-frequency').fadeIn();
+  }
+  else {
+    //console.log('No');
+    $('#newsletter-frequency').fadeOut();
+  }
+});
 
-
-
-
-
-
-
+$('#newsletter-checkbox').trigger('change');
 
 });
 
