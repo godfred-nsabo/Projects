@@ -1,0 +1,73 @@
+/*.highlight {
+  color: #00F;
+  /*background-color: #FF0;
+  color: #F00;*/
+/*}
+.item {
+  margin-left: 8px;
+}*/
+
+/*===========Lesson 13: Click Event and Event Delegation ============*/
+
+/*.box {
+  width: 100px;
+  height: 100px;
+  background-color: #CFC;
+}
+
+.box-button {
+  /* Changig size of color*/
+/*  width: 100px;
+  height: 20px;
+  background-color: #CCF;
+  /* text alignment  */
+  /*text-align: center;
+  position: relative;
+  top: 50;
+  transform: translateY(-50%);
+}
+
+.highlight {
+  background-color: #FCC;
+}*/
+
+
+/*-============== Setting up Store Items =================*/
+/*-============== Creating Items Dynamically =================*/
+
+body {
+  background-color: #EEE;
+}
+
+#container {
+  background-color: #FFF;
+  padding: 19px;
+  /*height: 100%;*/
+  margin: 12px;
+}
+
+.item {
+  width: 200px;
+  background-color: #DDD;
+  padding: 4px;
+  float: left;
+  margin: 6px;
+
+}
+
+.item img {
+  width: 100%;
+}
+
+.item .name {
+  font-size: 24px;
+}
+
+.item .price {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.item .more-info {
+  display: none;
+}
