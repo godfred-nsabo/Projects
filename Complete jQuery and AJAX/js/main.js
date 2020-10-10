@@ -180,12 +180,29 @@ $('#container').on('click','.more-info-link', function(event) {
 //$(this).parent().find('.more-info').fadeIn('slow'); // for showing the info in a faded view
 //$(this).parent().find('.more-info').fadeout('slow');
 //$(this).parent().find('.more-info').fadeToggle('slow');// fading in and same time toggling
-$(this).parent().find('.more-info').slideToggle('slow'); // sliding in and same time toggling
+$(this).parent().find('.more-info').slideToggle('fast'); // sliding in and same time toggling
+
+//====== Aninmation ======
+
+$(this).animate({"opacity":0.5, "margin-left": 10}, 3600)
+$(this).animate({"opacity":1.0, "margin-left": 0}, 3600);
 
 });
 
 $('#container').on('click','.item-remove', function(){
   $(this).parent().remove(); // And this works perfectly fine
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
