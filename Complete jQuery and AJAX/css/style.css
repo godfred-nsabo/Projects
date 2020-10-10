@@ -1,4 +1,8 @@
 .highlight {
-  background-color: #FF0;
-  /*color: #F00;*/
+  color: #00F;
+  /*background-color: #FF0;
+  color: #F00;*/
+}
+.item {
+  margin-left: 8px;
 }

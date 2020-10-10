@@ -15,7 +15,7 @@ $(document).ready(function(){
   // and >> for higher (2nd) levels
   //$('#container >>> .non-solid').addClass('highlight');
 
-  // New Lesson
+  // Selcting Inputs
 
   //$('#container input').addClass('highlight');
   //$('#container input:required').addClass('highlight');
@@ -26,7 +26,18 @@ $(document).ready(function(){
   //$('#container input[placeholder="Last Name"]').addClass('highlight'); // space between text should be in quotes
   // *= for highlighting first and beneath
 
-  $('#container input[placeholder*="First Name"]').addClass('highlight');
+  //$('#container input[placeholder*="Last Name"]').addClass('highlight');
+
+  //console.log($('#container').find('.hot'));
+  //console.log($('#container').find('.hot').children()); // highlighting the children of the parent Hot.
+
+//console.log($('#container').find('.hot').children('.non-solid')); // WE using the children function to filter
+
+//$('#container').find('.hot').children('.sold').addClass('highlight');
+
+$('#container').find('.hot').children('.non-solid').addClass('highlight');
+
+
 
 
 
