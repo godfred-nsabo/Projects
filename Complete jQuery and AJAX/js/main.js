@@ -84,15 +84,15 @@ $('#select-menu').on('change', function(){
   //console.log($('#select-menu option:selected').text()); // .text to read the actual text of the selected
   let name = $('#select-menu option:selected').text(); // .val to read the value of the selected
   let distance = $('#select-menu option:selected').val();
-  let price = $('#select-menu option:selected').data();
+  let price = $('#select-menu option:selected').data('price');
 
   console.log(price); //printing on the IDE
 if (distance) {
-$('#feeback-message').text('You are signing up for a ' + name + ', which costs ' + price + ', to a distance of ' + distance + 'km');
+  $('#feeback-message').text('You are signing up for a ' + name + ', which costs ' + price + ', to a distance of ' + distance + 'km');
+} else {
+
+$('#feeback-message').text(''); // can also use //.empty()
 }
-else {
-  $('#feeback-message').text('') // can also use .empty()
-};
 
 });
 
