@@ -30,3 +30,36 @@
 .highlight {
   background-color: #FCC;
 }*/
+
+
+/*-============== Setting up Store Items =================*/
+
+body {
+  background-color: #EEE;
+}
+
+#container {
+  background-color: #FFF;
+  padding: 19px;
+  height: 100%;
+  margin: 12px;
+}
+
+.item {
+  width: 200px;
+  background-color: #DDD;
+  padding: 4px;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item .name {
+  font-size: 24px;
+}
+
+.item .price {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}

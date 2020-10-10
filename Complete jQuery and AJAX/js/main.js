@@ -1,6 +1,6 @@
 //console.log("Hello World!");
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 
   //============HTML and Text===================
 
@@ -108,7 +108,7 @@ $('#feeback-message').text(''); // can also use //.empty()
 // BUG: ----------------------------- need // FIXME:
 //Keyup is precisely when you release the key
 
-$('#input-name').on('keyup', function(){
+/*$('#input-name').on('keyup', function(){
   console.log('Press!');
   //Repeat feedback message
   let name = $('#input-name').val();
@@ -118,13 +118,18 @@ $('#input-name').on('keyup', function(){
 $('a').on('click', function(event){
   event.preventDefault();
   $('#feedback-message').text('The page works fine');
-
 });
 
 
 
+});*/
+
+/*============== Setting up Store Items =================*/
+
+
+$(document).ready(function(){
+
 
 
 
 });
-;
