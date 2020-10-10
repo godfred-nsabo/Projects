@@ -147,7 +147,7 @@ html +=  '<div class="price">$ 499.98</div>';
 html +='<button class="item-add" >Add to Cart</button>';
 html +='<button class="item-remove">Remove</button>';
 html +='<br>';
-html +='<a href="#">More info</a>';
+html +='<a class="more-info-link" href="#">More info</a>';
 html +='<div class="more-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>';
 html +='</div>';
 
@@ -169,10 +169,20 @@ $('#container').on('click','.more-info-link', function(event) {
   event.preventDefault();
 
   //$(this).parent().find('.more-info').show(); // to show the more info item
-  $(this).parent().find('.more-info').toggle(); // to show the more/less info item
+//$(this).parent().find('.more-info').toggle(); // to show the more/less info item
+ //fast or slow to reduce and increase the pase of showing more info.
+ //you can add value to it
+ //$(this).parent().find('.more-info').toggle('slow');
+ //$(this).parent().find('.more-info').toggle('fast');
+ //$(this).parent().find('.more-info').toggle(1000);
+
+//======Fade In and SLide======
+//$(this).parent().find('.more-info').fadeIn('slow'); // for showing the info in a faded view
+//$(this).parent().find('.more-info').fadeout('slow');
+//$(this).parent().find('.more-info').fadeToggle('slow');// fading in and same time toggling
+$(this).parent().find('.more-info').slideToggle('slow'); // sliding in and same time toggling
 
 });
-
 
 $('#container').on('click','.item-remove', function(){
   $(this).parent().remove(); // And this works perfectly fine
