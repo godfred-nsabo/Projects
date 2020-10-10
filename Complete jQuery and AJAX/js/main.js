@@ -66,14 +66,16 @@ $(document).ready(function(){
 // ===================Click Events========================
 
 
-$('.box').on('click', function(){
+$('.box').on('click','.box-button', function(){
 //console.log('Hello!');
 //$('.box').addClass('highlight');
 // using the this function
 //$(this).addClass('highlight');
 // Using Toggle class insteas of addClass : This add class if it is not present and remove class if its already there.
 
-$(this).toggleClass('highlight');
+//$(this).toggleClass('highlight');
+$(this).parent().toggleClass('highlight');
+
 
 });
 

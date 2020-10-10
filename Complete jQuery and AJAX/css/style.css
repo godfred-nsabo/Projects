@@ -15,6 +15,18 @@
   background-color: #CFC;
 }
 
+.box-button {
+  /* Changig size of color*/
+  width: 100px;
+  height: 20px;
+  background-color: #CCF;
+  /* text alignment  */
+  text-align: center;
+  position: relative;
+  top: 50;
+  transform: translateY(-50%);
+}
+
 .highlight {
   background-color: #FCC;
 }
