@@ -6,5 +6,10 @@ $(document).ready(function(){
   //console.log("We are ready!");
   //console.log(document);
   //console.log($(document));
-  $('#fire').addClass('highlight');
+  //$('#fire').addClass('highlight');
+  //$('#container >> .solid').addClass('highlight');
+  //$('#container > .non-solid').addClass('highlight'); // > for immediate children
+  // and >> for higher (2nd) levels
+  $('#container >>> .non-solid').addClass('highlight');
+
 });
