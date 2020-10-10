@@ -67,3 +67,7 @@ body {
   margin-top: 4px;
   margin-bottom: 8px;
 }
+
+.item .more-info {
+  display: none;
+}

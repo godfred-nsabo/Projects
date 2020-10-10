@@ -148,7 +148,7 @@ html +='<button class="item-add" >Add to Cart</button>';
 html +='<button class="item-remove">Remove</button>';
 html +='<br>';
 html +='<a href="#">More info</a>';
-html +='<div class="more info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>';
+html +='<div class="more-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>';
 html +='</div>';
 
 //$('#container').append(html); // APPEND ADD ITEMS TO THE BUTTON LIST
@@ -164,6 +164,15 @@ $('#container').prepend(html); // PREPEND ADDS ITEMS TO THE FIRST LINE
 //$('#container').click('.item-remove',function(){
         //console.log('Hello');
 //  $(this).parent().remove();// This removes the entire item on page.
+
+$('#container').on('click','.more-info-link', function(event) {
+  event.preventDefault();
+
+  //$(this).parent().find('.more-info').show(); // to show the more info item
+  $(this).parent().find('.more-info').toggle(); // to show the more/less info item
+
+});
+
 
 $('#container').on('click','.item-remove', function(){
   $(this).parent().remove(); // And this works perfectly fine
