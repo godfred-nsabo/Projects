@@ -129,7 +129,28 @@ $('a').on('click', function(event){
 
 $(document).ready(function(){
 
+/*$('#button-create-item').on('click', function() {
+  let name = $('#input-create-item').val();
+  console.log(name);});*/
 
+  $('#button-create-item').click(function() {
+    //console.log($('#input-create-item').val());
+    let name = $('#input-create-item').val();
+    $('#input-create-item').val(''); async=false;
 
+  let html = '';
+html +='<div class="item">';
+html +='<div class="name">' + name + '</div>';
+html +='<img src="assests/coverpage.jpg"></img>';
+html +='<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</div>';
+html +=  '<div class="price">$ 499.98</div>';
+html +='<button >Add to Cart</button>';
+html +='<br>';
+html +='<a href="#">More info</a>';
+html +='<div class="more info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>';
+html +='</div>';
 
+//$('#container').append(html); // APPEND ADD ITEMS TO THE BUTTON LIST
+$('#container').prepend(html); // PREPEND ADDS ITEMS TO THE FIRST LINE
+});
 });
