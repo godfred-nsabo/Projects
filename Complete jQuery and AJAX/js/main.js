@@ -95,26 +95,30 @@ $('#feeback-message').text(''); // can also use //.empty()
 }
 
 });*/
-
+// BUG: --------------------------- need // FIXME:
 //<!---==============Keyup and Key down=================
 // Keydown precisely when you press the key
-$('#input-name').on('keydown', function(){
+/*$('#input-name').on('keydown', function(){
   //console.log('Press!');
   //Repeat feedback message
   let name = $('#input-name').val();
   $('#feedback-message').text('Pleased to meet you, ' + name);
 
-});
-
+});*/
+// BUG: ----------------------------- need // FIXME:
 //Keyup is precisely when you release the key
 
 $('#input-name').on('keyup', function(){
-  //console.log('Press!');
+  console.log('Press!');
   //Repeat feedback message
   let name = $('#input-name').val();
-  $('#feedback-message').text('Pleased to meet you, ' + name);
-
+  $('#feedback-message').text('Pleased to meet you');
 });
+
+
+
+
+
 
 
 });
