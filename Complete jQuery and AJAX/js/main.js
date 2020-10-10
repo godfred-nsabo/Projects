@@ -112,7 +112,13 @@ $('#input-name').on('keyup', function(){
   console.log('Press!');
   //Repeat feedback message
   let name = $('#input-name').val();
-  $('#feedback-message').text('Pleased to meet you');
+  $('#feedback-message').text('Pleased to meet you' + name);
+});
+
+$('a').on('click', function(event){
+  event.preventDefault();
+  $('#feedback-message').text('The page works fine');
+
 });
 
 
@@ -120,5 +126,5 @@ $('#input-name').on('keyup', function(){
 
 
 
-
 });
+;
