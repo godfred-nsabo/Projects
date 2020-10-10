@@ -204,7 +204,11 @@ $('#container').on('click','.item-remove', function(){
   // ============ Loading JSON =======================
   //Using .done(), .fail() and .always() functions
 
-  $.ajax('data/item.json').done(function(response) { // for successful functions
+  $.ajax('data/item.json',{
+    dataType: 'json',
+    contentType: 'application/json',
+    cache: false
+  }).done(function(response) { // for successful functions
     //console.log('response');
     //console.log(response);
     let items = response.items;
@@ -232,3 +236,22 @@ $('#container').on('click','.item-remove', function(){
 
 
 });
+
+
+//< BUG: Needs to be fixed---->
+/*$.ajax('data/item.json').done(function(response) { // for successful functions
+  //console.log('response');
+  //console.log(response);
+  let items = response.items;
+  //console.log(items);
+  items.forEach(function(item){
+    //console.log(item);
+addItem(item.name, item.description,
+  item.price, item.moreInfo);
+  });
+
+}).fail(function (request, errorType, errorMessage){ // for failed functions
+  console.log(errorMessage);
+}).always(function(){ // alawys is called whether success or failed
+
+})*/
