@@ -47,7 +47,31 @@ $(document).ready(function(){
 
 // for the middle: either .last().prev() or .first().next()
 
-$('#container').find('.hot').children().first().next().addClass('highlight');
+//$('#container').find('.hot').children().first().next().addClass('highlight');
+
+// Parent highlight
+//$('#snow').parent().addClass('highlight');
+
+$('#snow').parent().find('.title').addClass('highlight');
+// the hierachy parent to go up, children to go down.
+//console.log($('#snow').parent());
+
+//console.log($('#snow').closest('.temperature')); // closest selector to the parent
+
+console.log($('#snow').closest('#container')); // closest selector to the parent for the whole container
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
