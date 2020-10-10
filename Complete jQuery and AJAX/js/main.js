@@ -63,10 +63,9 @@ $(document).ready(function(){
 //console.log($('#snow').closest('#container')); // closest selector to the parent for the whole container
 
 
-// ===================Click Events========================
+// ===================Click Event and Event Delegation========================
 
-
-$('.box').on('click','.box-button', function(){
+//$('.box').on('click','.box-button', function(){
 //console.log('Hello!');
 //$('.box').addClass('highlight');
 // using the this function
@@ -74,17 +73,28 @@ $('.box').on('click','.box-button', function(){
 // Using Toggle class insteas of addClass : This add class if it is not present and remove class if its already there.
 
 //$(this).toggleClass('highlight');
-$(this).parent().toggleClass('highlight');
+//$(this).parent().toggleClass('highlight');});
 
+
+// ===========Changing Events ===============
+
+$('#select-menu').on('change', function(){
+  //console.log('Print Hello jquery');
+  //console.log($('#select-menu option:selected').val()); // .val to read the value of the selected
+  //console.log($('#select-menu option:selected').text()); // .text to read the actual text of the selected
+  let name = $('#select-menu option:selected').text(); // .val to read the value of the selected
+  let distance = $('#select-menu option:selected').val();
+  let price = $('#select-menu option:selected').data();
+
+  console.log(price); //printing on the IDE
+if (distance) {
+$('#feeback-message').text('You are signing up for a ' + name + ', which costs ' + price + ', to a distance of ' + distance + 'km');
+}
+else {
+  $('#feeback-message').text('') // can also use .empty()
+};
 
 });
-
-
-
-
-
-
-
 
 
 
