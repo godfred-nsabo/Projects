@@ -35,9 +35,19 @@ $(document).ready(function(){
 
 //$('#container').find('.hot').children('.sold').addClass('highlight');
 
-$('#container').find('.hot').children('.non-solid').addClass('highlight');
+//$('#container').find('.hot').children('.non-solid').addClass('highlight');
 
+//First, Last and Prev
 
+//First
+//$('#container').find('.hot').children().first().addClass('highlight');
+
+// Last
+//$('#container').find('.hot').children().last().addClass('highlight');
+
+// for the middle: either .last().prev() or .first().next()
+
+$('#container').find('.hot').children().first().next().addClass('highlight');
 
 
 
