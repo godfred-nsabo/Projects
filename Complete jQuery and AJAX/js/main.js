@@ -144,7 +144,8 @@ html +='<div class="name">' + name + '</div>';
 html +='<img src="assests/coverpage.jpg"></img>';
 html +='<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</div>';
 html +=  '<div class="price">$ 499.98</div>';
-html +='<button >Add to Cart</button>';
+html +='<button class="item-add" >Add to Cart</button>';
+html +='<button class="item-remove">Remove</button>';
 html +='<br>';
 html +='<a href="#">More info</a>';
 html +='<div class="more info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>';
@@ -153,4 +154,19 @@ html +='</div>';
 //$('#container').append(html); // APPEND ADD ITEMS TO THE BUTTON LIST
 $('#container').prepend(html); // PREPEND ADDS ITEMS TO THE FIRST LINE
 });
+
+//$('#container .item-remove').on('click', function(){
+  //console.log('Hello');
+//$('#container .item-remove').click(function(){
+    //console.log('Hello');
+  //  $(this).parent().remove(); // Removing affects only the present item not the new items added
+
+//$('#container').click('.item-remove',function(){
+        //console.log('Hello');
+//  $(this).parent().remove();// This removes the entire item on page.
+
+$('#container').on('click','.item-remove', function(){
+  $(this).parent().remove(); // And this works perfectly fine
+});
+
 });
