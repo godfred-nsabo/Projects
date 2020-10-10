@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 // ===========Changing Events ===============
 
-$('#select-menu').on('change', function(){
+/*$('#select-menu').on('change', function(){
   //console.log('Print Hello jquery');
   //console.log($('#select-menu option:selected').val()); // .val to read the value of the selected
   //console.log($('#select-menu option:selected').text()); // .text to read the actual text of the selected
@@ -94,9 +94,27 @@ if (distance) {
 $('#feeback-message').text(''); // can also use //.empty()
 }
 
+});*/
+
+//<!---==============Keyup and Key down=================
+// Keydown precisely when you press the key
+$('#input-name').on('keydown', function(){
+  //console.log('Press!');
+  //Repeat feedback message
+  let name = $('#input-name').val();
+  $('#feedback-message').text('Pleased to meet you, ' + name);
+
 });
 
+//Keyup is precisely when you release the key
 
+$('#input-name').on('keyup', function(){
+  //console.log('Press!');
+  //Repeat feedback message
+  let name = $('#input-name').val();
+  $('#feedback-message').text('Pleased to meet you, ' + name);
+
+});
 
 
 });
