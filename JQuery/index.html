@@ -7,15 +7,13 @@
   </head>
 
 
-<body>
   <!---============== Creating Items Dynamically =================-->
 
-<div id="admin-container">
+<!--<div id="admin-container">
   <input id="input-create-item" type="text"></input>
   <button id="button-create-item">Add</button>
-  <div id="container">
 
-<!-- previous lesson=========
+<!- previous lesson=========
 
 <h4>Hot Elements</h4>
 <ul>
@@ -84,21 +82,51 @@
 
 <!---============== Setting up Store Items =================-->
 <!---============== Creating Items Dynamically =================-->
+<body>
+<div id="cart-container">
+  $0
+</div>
+<div id="user-data">
+  <form id="cart-form" method="post" action="data/cartSubmit.json">
+  <br/>
+  <label>Name</label>
+  <input name="name" type="text"></input>
+<br/>
+  <label>Email</label>
+  <input name="email" type="text"></input>
+<br/>
+<label>Newsletter?</label>
+<input name="wantNewsletter" id="newsletter-checkbox" checked type="checkbox"></input>
+<br/>
+<select name="newsletterFrequency" id="newsletter-frequency">
+  <option>-</option>
+  <option>Daily</option>
+  <option selected>Weekly</option>
+  <option>Monthly</option>
+</select>
+<br/>
+<button id="submit-cart">Submit</button>
+</form>
+<div id="feedback-message"></div>
+
+</div>
+  <div id="container">
 
 <div class="item">
-<!-- Name, Description,p purchase and more information-->
-  <div class="name">QUIZ APP</div>
+
+<!--Name, Description,p purchase and more information-->
+<!--  <div class="name">QUIZ APP</div>
   <img src="assests/coverpage.jpg"></img>
   <div class="description">Lorem ipsum dolor sit amet,
     consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.</div>
-  <div class="price">$ 499.98</div>
+  <div class="price">499.98</div>
   <button class="item-add">Add to Cart</button>
   <button class="item-remove">Remove</button>
   <br>
   <a class="more-info-link" href="#">More info</a>
   <div class="more-info">Lorem ipsum dolor sit amet,
-    consectetur adipisicing elit, sed do eiusmod</div>
+    consectetur adipisicing elit, sed do eiusmod</div>-->
 </div>
 <br style="clear; left;"/>
 </div>

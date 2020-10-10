@@ -46,13 +46,22 @@ body {
   margin: 12px;
 }
 
+#cart-container {
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+  padding: 12px;
+  margin-left: 0;
+}
+#newsletter-frequency {
+  display: none;
+}
 .item {
   width: 200px;
   background-color: #DDD;
   padding: 4px;
   float: left;
   margin: 6px;
-
 }
 
 .item img {
