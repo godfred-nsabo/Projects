@@ -2,20 +2,22 @@
 
 $(document).ready(function(){
 
-  //Previous Lesson
+  //============HTML and Text===================
 
   //$('body').text('Hello World!'); // '' working as a selector. we work with body tag in the .js
   //$('body').html('<strong> Hello World!</strong>')
   //console.log("We are ready!");
   //console.log(document);
   //console.log($(document));
+
+  // Selecting by ID and CLass =========================
   //$('#fire').addClass('highlight');
   //$('#container >> .solid').addClass('highlight');
   //$('#container > .non-solid').addClass('highlight'); // > for immediate children
   // and >> for higher (2nd) levels
   //$('#container >>> .non-solid').addClass('highlight');
 
-  // Selcting Inputs
+  // ==============Selcting Inputs====================
 
   //$('#container input').addClass('highlight');
   //$('#container input:required').addClass('highlight');
@@ -37,7 +39,7 @@ $(document).ready(function(){
 
 //$('#container').find('.hot').children('.non-solid').addClass('highlight');
 
-//First, Last and Prev
+//==============First, Last and Prev===============
 
 //First
 //$('#container').find('.hot').children().first().addClass('highlight');
@@ -49,22 +51,31 @@ $(document).ready(function(){
 
 //$('#container').find('.hot').children().first().next().addClass('highlight');
 
-// Parent highlight
+// ====================Parent highlight===================
 //$('#snow').parent().addClass('highlight');
 
-$('#snow').parent().find('.title').addClass('highlight');
+//$('#snow').parent().find('.title').addClass('highlight');
 // the hierachy parent to go up, children to go down.
 //console.log($('#snow').parent());
 
 //console.log($('#snow').closest('.temperature')); // closest selector to the parent
 
-console.log($('#snow').closest('#container')); // closest selector to the parent for the whole container
+//console.log($('#snow').closest('#container')); // closest selector to the parent for the whole container
 
 
+// ===================Click Events========================
 
 
+$('.box').on('click', function(){
+//console.log('Hello!');
+//$('.box').addClass('highlight');
+// using the this function
+//$(this).addClass('highlight');
+// Using Toggle class insteas of addClass : This add class if it is not present and remove class if its already there.
 
+$(this).toggleClass('highlight');
 
+});
 
 
 

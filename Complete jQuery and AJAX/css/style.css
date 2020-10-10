@@ -1,8 +1,20 @@
-.highlight {
+/*.highlight {
   color: #00F;
   /*background-color: #FF0;
   color: #F00;*/
-}
+/*}
 .item {
   margin-left: 8px;
+}*/
+
+/*===========Lesson 13: Click Event============*/
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #CFC;
+}
+
+.highlight {
+  background-color: #FCC;
 }
