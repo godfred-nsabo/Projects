@@ -238,7 +238,7 @@ $('#container').on('click','.item-remove', function(){
 });
 
 
-//< BUG: Needs to be fixed---->
+//< BUG: Needs to be fixed----> =====NOW FIXED
 /*$.ajax('data/item.json').done(function(response) { // for successful functions
   //console.log('response');
   //console.log(response);
