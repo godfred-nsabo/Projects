@@ -1,7 +1,7 @@
 # DESCRIPTION
 
-In this course, you're going to learn how to build a Quiz application without the assistance 
-of libraries or frameworks. Here are some of the topic we will cover!
+In this project, we're to build a Quiz application without the assistance 
+of libraries or frameworks. Here are some stuffs covered!
 
 * Save high scores in Local Storage
 
@@ -13,8 +13,6 @@ of libraries or frameworks. Here are some of the topic we will cover!
 
 * Fetch trivia questions from Open Trivia DB API
 
-# What you’ll learn
-
 * ES6 JavaScript features like arrow functions, the spread operator, const and let, and template literal string
 * how to use the Fetch API to load trivia questions from an API
 * how to store high scores in Local Storage
@@ -22,13 +20,8 @@ of libraries or frameworks. Here are some of the topic we will cover!
 * how to create a progress bar from scratch
 * how to create a spinning loader icon from scratch
 
-# Requirements or Prerequisites?
+# Requirements
 
-* a text editor (Visual Studio Code suggested)
-* Google Chrome browser
+* a text editor (Visual Studio Code/Atom/Brackets suggested)
+* Google Chrome browser/Safari
 * an excitement to learn!
-
-# Who this course is for:
-
-* Beginner or aspiring Web Developers looking to learn core Web Development skills
-* Intermediate Web Developers looking to improve their core Web Development Skills
