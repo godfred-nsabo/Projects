@@ -3,7 +3,7 @@
 function Apple( color, weight ){
 	this.color = color;
 	this.weight = weight;	
-};
+}
 
 Apple.prototype = {
 	
