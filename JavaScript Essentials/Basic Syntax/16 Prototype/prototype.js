@@ -5,7 +5,7 @@ function Apple( color, weight ){
 	this.weight = weight;	
 	this.eat = function(){ return "Am eating the Apple"; };
 	this.throw = function() { return "Throw the spoilt Apple away" ; };
-};
+}
 
 Apple.prototype = {
 	
